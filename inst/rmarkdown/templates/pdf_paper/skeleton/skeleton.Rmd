@@ -1,0 +1,92 @@
+---
+title: \sffamily{Title}
+#subtitle: uncomment for use of subtitle
+author: 
+  - author one
+  - author two 
+affiliation: 
+  - affiliation one 
+  - affiliation two
+date: "`r Sys.Date()`"
+#date: "`r format(Sys.Date(), '%A, %B %d, %Y')`" #I like old school dates :-)
+output:
+  rmdplugr::pdf_article:
+    includes:
+      in_header: 
+        - texheader.tex
+        - font-selection
+    author_block: TRUE
+    keep_tex: TRUE
+    toc: no
+    latex_engine: xelatex
+    fig_caption: TRUE
+    df_print: kable
+    highlight: tango
+    #csl: uncomment to add a custom .csl file for references
+fontsize: 12pt
+geometry: margin=1in
+indent: TRUE
+linkcolor: blue
+urlcolor: red
+citecolor: green
+#bibliography: master.bib #uncomment this line to add the bibliography resource.
+#biblio-style: authoryear #uncomment this line to add teh bibliography style
+#biblio-title: "References" #could choose any section title (e.g. "Bibliography")
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#load desired r packages if including analysis and/or r code
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+library(citr)
+```
+
+\newpage
+
+# Abstract{-#Abstract}
+
+\noindent The abstract should specify the key question that the article addresses. It should also offer a theoretical and conceptual framework for understanding the issue, and for generalizing to other, similar questions. Finally, it should note the methodological or analytical approach to addressing the question, and give a very brief summation of the key finding.
+
+\noindent \textbf{Keywords:} 3--6 key words that allow researchers to find the article
+
+\newpage
+
+\pagenumbering{arabic}
+
+# Introduction {-}
+
+The introduction should reintroduce the key question being addressed in the paper. Introductions should also address the importance for furthering the theory or conceptual frame for understanding this problem, and 'like' problems. This should also be extend to the problems importance in real-world understanding of human, social, or institutional behavior. Finally, the introduction offers a hook to keep the reader progressing through the article. Add all addition sections as needed.
+
+My workflow depends on the r packages `tidyverse`, `kableExtra`, `readxl`, and `citr`. Change these dependencies as it fits your needs.
+
+The html below makes sure that references begin on a separate, new page. It also adjusts the indenting and spacing for proper formatting and alignment. The final bit places the references. Simply uncomment to make active (remove `<!-- -->`). I have added placeholder sections that are fairly standard for social science research. Adjust these as necessary.
+
+# Background and Literature {-}
+
+# Theory & Conceptualization {-}
+
+# Research Design {-}
+
+## Data {-}
+
+### Operationalization & Measurement {-}
+
+## Methodological Approach {-}
+
+# Analysis & Findings {-}
+
+# Conclusion {-}
+
+
+<!-- \newpage -->
+
+<!-- # References -->
+
+<!-- \setlength{\parindent}{-0.2in} -->
+<!-- \setlength{\leftskip}{0.2in} -->
+<!-- \setlength{\parskip}{8pt} -->
+<!-- \noindent -->
+
+<!-- <div id="refs"></div> -->

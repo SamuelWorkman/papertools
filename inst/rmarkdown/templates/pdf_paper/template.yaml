@@ -1,0 +1,4 @@
+name: PDF Paper
+description: >
+   Styling for a PDF paper from the pagedown package for social science research.
+create_dir: FALSE
