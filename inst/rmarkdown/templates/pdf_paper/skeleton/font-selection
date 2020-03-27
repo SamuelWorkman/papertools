@@ -1,9 +1,4 @@
-\documentclass{article}
-
-$header-includes$
-$endfor$
-
-\setsansfont [ Path = /fonts/,
+\setsansfont [ Path = fonts/,
   UprightFont = Montserrat-Regular.ttf,
   BoldFont = Montserrat-Bold.ttf,
   ItalicFont = Montserrat-Italic.ttf,
@@ -18,17 +13,3 @@ $endfor$
 \setmonofont [ Path = fonts/,
   UprightFont = FiraMono-Regular.ttf,
   BoldFont = FiraMono-Bold.ttf ] {FiraMono}
-
-\usepackage{setspace}\singlespacing
-\usepackage{indentfirst}
-\parskip=3pt
-\frenchspacing
-\usepackage[sf,bf]{titlesec}
-\pagenumbering{gobble}
-\usepackage[super]{nth}
-%\usepackage{lineno} #if journal requires line numbering, uncomment these two lines
-%\linenumbers
-
-\begin{document}
-
-\end{document}
