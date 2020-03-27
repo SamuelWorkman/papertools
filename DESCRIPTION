@@ -3,7 +3,7 @@ Type: Package
 Title: Styles for Drafting Quantitative Social Science Papers
 Version: 0.1.0
 Author: Samuel Workman
-Maintainer: Samuel Workman <https://www.samuelworkman.org>
+Maintainer: Samuel Workman <samuel.workman@gmail.com>
 Description: Provides pdf and html themes for drafting papers.
 License: GNU General Public License v3.0
 Encoding: UTF-8
