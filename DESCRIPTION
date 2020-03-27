@@ -5,6 +5,6 @@ Version: 0.1.0
 Author: Samuel Workman
 Maintainer: Samuel Workman <https://www.samuelworkman.org>
 Description: Provides pdf and html themes for drafting papers.
-License: What license is it under?
+License: GNU General Public License v3.0
 Encoding: UTF-8
 LazyData: true
