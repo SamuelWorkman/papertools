@@ -1,6 +1,6 @@
 solar_dark_paper <- function(toc = TRUE) {
 
-  css <- system.file("rmarkdown/templates/bw_paper/resources/solarized_dark.css", package = "papertools")
+  css <- system.file("rmarkdown/templates/solar_dark_paper/resources/solarized_dark.css", package = "papertools")
 
   # call the base html_document function
   pagedown::html_paged(fig_width = 6.5,
