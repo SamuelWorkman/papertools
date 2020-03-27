@@ -1,0 +1,4 @@
+name: BW Paper
+description: >
+   CSS styling for a black-and-white html paper draft using pagedown.
+create_dir: FALSE

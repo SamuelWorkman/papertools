@@ -1,0 +1,61 @@
+/*BACKGROUND COLOR*/
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.title {
+  text-align: center;
+}
+
+.author{
+  text-align: center;
+}
+
+.author-afil {
+  text-align: center;
+}
+
+.date{
+  text-align: center;
+  page-break-after: always;
+}
+
+.abstract {
+  text-align: left;
+  page-break-after: always;
+}
+
+h1 {
+  color: #000000;
+}
+
+/*HEADING FONT COLOR*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+}
+
+/*LINKS*/
+/* unvisited link */
+a:link {
+  color: #268bd2;
+}
+
+/* visited link */
+a:visited {
+  color: #859900;
+}
+
+/* mouse over link */
+a:hover {
+  color: #dc322f;
+}
+
+/* selected link */
+a:active {
+  color: #cb4b16;
+}
