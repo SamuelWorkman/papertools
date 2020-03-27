@@ -29,7 +29,11 @@ math {
 /*BACKGROUND COLOR*/
 body {
   background-color: #2E3440;
-  color: #ECEFF4;
+  color: #E5E9F0;
+}
+
+.strong {
+  color: #E5E9F0;
 }
 
 .title {
@@ -55,7 +59,7 @@ body {
 }
 
 h1 {
-  color: #ECEFF4;
+  color: #E5E9F0;
 }
 
 /*HEADING FONT COLOR*/
@@ -64,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ECEFF4; /*#cb4b16;*/
+  color: #E5E9F0; /*#cb4b16;*/
 }
 
 /*LINKS*/
