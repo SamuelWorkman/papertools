@@ -2,4 +2,4 @@
 
 ## To Do
 
-- [ ] Adjust adjustments for caption font and figure placement to the pdf template.
+- [ ] Adjust `TeX` header for caption font and figure placement to the pdf template.
