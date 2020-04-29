@@ -13,3 +13,10 @@
 \setmonofont [ Path = fonts/,
   UprightFont = FiraMono-Regular.ttf,
   BoldFont = FiraMono-Bold.ttf ] {FiraMono}
+
+\makeatletter
+\renewenvironment{table}%
+  {\renewcommand\familydefault\sfdefault
+   \@float{table}}
+  {\end@float}
+\makeatother
