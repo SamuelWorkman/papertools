@@ -1,0 +1,16 @@
+\usepackage{setspace}\singlespacing
+\usepackage{indentfirst}
+\parskip=3pt
+\frenchspacing
+\usepackage[sf,bf]{titlesec}
+\pagenumbering{gobble}
+\usepackage[super]{nth}
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+%\usepackage{endnotes} # if journal requires endnotes
+%\let\footnote=\endnote
+%\usepackage{lineno} #if journal requires line numbering, uncomment these two lines
+%\linenumbers

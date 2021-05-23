@@ -1,0 +1,212 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdfauthor={author one; author two},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=green,
+  urlcolor=red,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Suppress indenting after some environments
+\IfFileExists{noindentafter.sty}{%
+  \usepackage{noindentafter}
+  \NoIndentAfterEnv{itemize}
+  \NoIndentAfterEnv{enumerate}
+  \NoIndentAfterEnv{description}
+  \NoIndentAfterEnv{Shaded}
+  \NoIndentAfterEnv{center}
+  \NoIndentAfterEnv{verbatim}
+}{}
+\IfFileExists{subfig.sty}{%
+  \usepackage{subfig}%
+}{}
+\usepackage{setspace}\singlespacing
+\usepackage{indentfirst}
+\parskip=3pt
+\frenchspacing
+\usepackage[sf,bf]{titlesec}
+\pagenumbering{gobble}
+\usepackage[super]{nth}
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+%\usepackage{endnotes} # if journal requires endnotes
+%\let\footnote=\endnote
+%\usepackage{lineno} #if journal requires line numbering, uncomment these two lines
+%\linenumbers
+\setsansfont [ Path = fonts/,
+  UprightFont = Montserrat-Regular.ttf,
+  BoldFont = Montserrat-Bold.ttf,
+  ItalicFont = Montserrat-Italic.ttf,
+  BoldItalicFont = Montserrat-BoldItalic.ttf ] {Montserrat}
+
+\setmainfont [ Path = fonts/,
+  UprightFont = AlegreyaSans-Regular.ttf,
+  BoldFont = AlegreyaSans-Bold.ttf,
+  ItalicFont = AlegreyaSans-Italic.ttf,
+  BoldItalicFont = AlegreyaSans-BoldItalic.ttf ] {EBGaramond}
+
+\setmonofont [ Path = fonts/,
+  UprightFont = FiraMono-Regular.ttf,
+  BoldFont = FiraMono-Bold.ttf ] {FiraMono}
+
+\makeatletter
+\renewenvironment{table}%
+  {\renewcommand\familydefault\sfdefault
+   \@float{table}}
+  {\end@float}
+\makeatother
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{\sffamily{``Title''}}
+% Author block
+\IfFileExists{authblk.sty}{%
+  \usepackage[]{authblk}%
+  \renewcommand\Affilfont{\itshape\small}
+  \renewcommand\Authfont{}
+  \author{author one}
+  \author{author two}
+  \affil{affiliation one}
+  \affil{affiliation two}
+}{
+  \author{author one}
+  \author{author two}
+}
+\date{2021-05-23}
+
+\begin{document}
+\maketitle
+
+\newpage
+
+\hypertarget{Abstract}{%
+\section*{Abstract}\label{Abstract}}
+\addcontentsline{toc}{section}{Abstract}
+
+\noindent The abstract should specify the key question that the article addresses. It should also offer a theoretical and conceptual framework for understanding the issue, and for generalizing to other, similar questions. Finally, it should note the methodological or analytical approach to addressing the question, and give a very brief summation of the key finding.
+
+\noindent \textbf{Keywords:} 3--6 key words that allow researchers to find the article
+
+\newpage
+
+\pagenumbering{arabic}
+
+\hypertarget{introduction}{%
+\section*{Introduction}\label{introduction}}
+\addcontentsline{toc}{section}{Introduction}
+
+The introduction should reintroduce the key question being addressed in the paper. Introductions should also address the importance for furthering the theory or conceptual frame for understanding this problem, and `like' problems. This should also be extend to the problems importance in real-world understanding of human, social, or institutional behavior. Finally, the introduction offers a hook to keep the reader progressing through the article. Add all addition sections as needed.
+
+My workflow depends on the r packages \texttt{tidyverse}, \texttt{kableExtra}, \texttt{readxl}, and \texttt{citr}. Change these dependencies as it fits your needs.
+
+The html below makes sure that references begin on a separate, new page. It also adjusts the indenting and spacing for proper formatting and alignment. The final bit places the references. Simply uncomment to make active (remove \texttt{\textless{}!-\/-\ -\/-\textgreater{}}). I have added placeholder sections that are fairly standard for social science research. Adjust these as necessary.
+
+\hypertarget{background-and-literature}{%
+\section*{Background and Literature}\label{background-and-literature}}
+\addcontentsline{toc}{section}{Background and Literature}
+
+\hypertarget{theory-conceptualization}{%
+\section*{Theory \& Conceptualization}\label{theory-conceptualization}}
+\addcontentsline{toc}{section}{Theory \& Conceptualization}
+
+\hypertarget{research-design}{%
+\section*{Research Design}\label{research-design}}
+\addcontentsline{toc}{section}{Research Design}
+
+\hypertarget{data}{%
+\subsection*{Data}\label{data}}
+\addcontentsline{toc}{subsection}{Data}
+
+\hypertarget{operationalization-measurement}{%
+\subsubsection*{Operationalization \& Measurement}\label{operationalization-measurement}}
+\addcontentsline{toc}{subsubsection}{Operationalization \& Measurement}
+
+\hypertarget{methodological-approach}{%
+\subsection*{Methodological Approach}\label{methodological-approach}}
+\addcontentsline{toc}{subsection}{Methodological Approach}
+
+\hypertarget{analysis-findings}{%
+\section*{Analysis \& Findings}\label{analysis-findings}}
+\addcontentsline{toc}{section}{Analysis \& Findings}
+
+\hypertarget{conclusion}{%
+\section*{Conclusion}\label{conclusion}}
+\addcontentsline{toc}{section}{Conclusion}
+
+\end{document}

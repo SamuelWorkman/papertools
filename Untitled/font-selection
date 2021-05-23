@@ -1,0 +1,22 @@
+\setsansfont [ Path = fonts/,
+  UprightFont = Montserrat-Regular.ttf,
+  BoldFont = Montserrat-Bold.ttf,
+  ItalicFont = Montserrat-Italic.ttf,
+  BoldItalicFont = Montserrat-BoldItalic.ttf ] {Montserrat}
+
+\setmainfont [ Path = fonts/,
+  UprightFont = AlegreyaSans-Regular.ttf,
+  BoldFont = AlegreyaSans-Bold.ttf,
+  ItalicFont = AlegreyaSans-Italic.ttf,
+  BoldItalicFont = AlegreyaSans-BoldItalic.ttf ] {EBGaramond}
+
+\setmonofont [ Path = fonts/,
+  UprightFont = FiraMono-Regular.ttf,
+  BoldFont = FiraMono-Bold.ttf ] {FiraMono}
+
+\makeatletter
+\renewenvironment{table}%
+  {\renewcommand\familydefault\sfdefault
+   \@float{table}}
+  {\end@float}
+\makeatother
